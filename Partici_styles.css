@@ -1,0 +1,76 @@
+.contenedorperfiles {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay espacio suficiente */
+    justify-content: space-around; /* Espacia los elementos uniformemente */
+    padding: 20px; /* Espacio alrededor del contenedor */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+    }
+    .particibox {
+        max-width: 100%; /* Los perfiles ocupan todo el ancho en pantallas pequeñas */
+    }
+}
+
+
+/* Contenedor principal del perfil */
+.particibox {
+    display: flex;
+    align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+    background-color: white; /* Fondo blanco para el contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor del contenedor */
+    padding: 20px; /* Espacio dentro del contenedor */
+    max-width: 400px; /* Ancho máximo del contenedor */
+    border: 2px solid black; /* Borde sólido */
+    margin: 20px auto 20px auto; /* Margen automático para centrar horizontalmente */
+}
+
+/* Estilo de la imagen del perfil */
+.profile-img {
+    text-align: center; /* Centra la imagen horizontalmente dentro de su contenedor */
+    margin-right: 20px; /* Margen derecho para separar la imagen del texto */
+}
+
+.profile-img img {
+    width: 150px; /* Ancho fijo para la imagen */
+    height: 150px; /* Altura fija para la imagen */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio asignado sin distorsionarse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la imagen */
+}
+
+/* Contenedor para el texto del perfil */
+.txt_box {
+    max-width: 300px; /* Ancho máximo para el texto */
+    word-wrap: break-word; /* Permite que las palabras largas pasen a la línea siguiente */
+    overflow-x: auto; /* Habilita desplazamiento horizontal si el contenido lo requiere */
+    padding: 10px; /* Espaciado interno */
+    text-align: justify; /* Justifica el texto */
+}
+
+/* Estilos para los cuerpos de los acordeones */
+.accordion-bodybox {
+    max-width: 300px; /* Ancho máximo */
+    word-wrap: break-word; /* Permite que las palabras pasen a la línea siguiente */
+    overflow-x: auto; /* Desplazamiento horizontal si es necesario */
+    padding: 10px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Fondo claro */
+    border: 1px solid #ddd; /* Borde sutil */
+}
+
+/* CSS global para los acordeones no necesita ajustes adicionales */
+
+
+.partici {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: start;
+    border: 2px solid black;
+    margin: 50px;
+    background-color: white;
+    padding: 10px;
+}
