@@ -1,0 +1,108 @@
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(135deg, rgb(255, 255, 255) 10%, rgb(220, 220, 220) 50%, rgb(184, 184, 184) 100%);    font-family: 'Arial', sans-serif;
+}
+
+
+h1 {
+    color: #333;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+
+.navbar-nav .nav-link {
+    font-family: 'playwrite', sans-serif;
+    color: rgb(255, 255, 255); /* Color del texto   color: rgb(255, 255, 255);  */
+    font-size: 20px;
+    transition: border-bottom 0.3s ease; /* Transición suave para la línea */
+    border-bottom: 2px solid transparent; /* Línea invisible por defecto */
+    padding-bottom: 5px; /* Espacio para la línea */
+ 
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+   
+    border-bottom: 2px solid blue; /* Línea azul al pasar el ratón o al seleccionar */
+}
+
+.navbar-nav .nav-link.active {
+    border-bottom: 2px solid blue; /* Línea azul para el enlace activo */
+    color: rgb(255, 255, 255); /* Asegura que el texto se mantenga visible */
+
+}
+
+.footer {
+    font-family: 'playwrite', sans-serif;
+    background-color: #6e0c59;
+}
+
+        
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .columna {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        /* La columna del medio será más angosta */
+        .medio {
+            flex: 0.1;
+        }
+        .laterales {
+            flex: 0.5;
+        }
+
+        /* Estilos para la imagen redonda */
+        .imagen-redonda {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            object-fit: cover; /* Ajusta la imagen sin deformarla */
+            border: 3px solid #333;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para el enlace debajo de la imagen */
+        .enlace {
+            display: block;
+            text-decoration: none;
+            color: blue;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .enlace:hover {
+            text-decoration: underline;
+            color: darkblue;
+        }
+
+        /* Diseño para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .contenedor {
+                flex-direction: column;
+            }
+            .columna {
+                flex: none;
+                width: 100%;
+            }
+        }

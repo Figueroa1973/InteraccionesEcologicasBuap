@@ -1,0 +1,36 @@
+
+.article-list {
+    padding: 30px;
+    font-family: 'carvin2', sans-serif;
+    color: #000000;
+    
+}
+
+.article-item {
+     
+    max-width: 90%;
+    font-size: 20px;
+
+}
+
+.pdf-icon {
+    
+    width: 40px;
+    vertical-align: middle;
+}
+
+
+.tb-icon {
+    padding-right: 10px; 
+    padding-left: 25px;
+    vertical-align: top;
+   
+}
+
+.tb-txt {
+   
+    padding-right: 10px; 
+    padding-left: 10px;
+    padding-bottom: 15px;
+    vertical-align: top;
+}
