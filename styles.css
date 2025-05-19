@@ -211,13 +211,13 @@ a:hover {
     color: rgb(0, 0, 0);
 }
 .card {
-    background-color: #451e4b;
+    background-color: #5f106b;
     color: rgb(255, 255, 255);
     width: 18rem;
 }
 .card-body a {
-    background-color: #451e4b;
-    color: white; /* Cambiar el color del botón a blanco */
+    background-color: #660481;
+    color: rgb(255, 255, 255); /* Cambiar el color del botón a blanco */
 }
 .menulist {
     font-family: 'oswald', sans-serif;
@@ -388,3 +388,24 @@ a:hover {
         width: 100%;
     }
 }
+
+
+
+ .audio-morado {
+    width: 200px; /* Ajusta el tamaño de la barra */
+    background-color: #5f106b; /* Color morado */
+    border: none;
+    border-radius: 5px;
+  }
+
+  .audio-morado::-webkit-media-controls-panel {
+    background-color: #e1cd31; /* Fondo morado para los controles */
+  }
+
+  .audio-morado::-webkit-media-controls-play-button {
+    background-color: e1cd31; /* Color blanco para el botón de play */
+  }
+
+  .audio-morado::-webkit-media-controls-volume-slider {
+    background-color: white; /* Color blanco para el control de volumen */
+  }
