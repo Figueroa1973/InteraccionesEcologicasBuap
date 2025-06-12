@@ -211,12 +211,12 @@ a:hover {
     color: rgb(0, 0, 0);
 }
 .card {
-    background-color: #5f106b;
+    background-color: #6E0C59;
     color: rgb(255, 255, 255);
     width: 18rem;
 }
 .card-body a {
-    background-color: #660481;
+    background-color: #6E0C59;
     color: rgb(255, 255, 255); /* Cambiar el color del botón a blanco */
 }
 .menulist {
