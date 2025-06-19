@@ -1,8 +1,8 @@
 /* Estilos básicos del carrusel */
 .carousel {
     position: relative;
-    width: 800px;
-    max-width: 600px;
+    width: 100%;
+    max-width: 800px; /* Limita el tamaño en pantallas grandes */
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
@@ -15,9 +15,12 @@
 
 .carousel-images img {
     width: 100%;
-    height: 500px;
+    height: auto;
+    max-height: 80vh; /* Limita altura en pantallas grandes sin cortar en móviles */
+    object-fit: cover;
 }
 
+/* Botones de navegación */
 .carousel-button {
     position: absolute;
     top: 50%;
@@ -36,4 +39,17 @@
 
 .carousel-button.next {
     right: 10px;
+}
+
+/* Media queries para ajustar estilos en pantallas pequeñas */
+@media (max-width: 768px) {
+    .carousel-button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-button {
+        padding: 6px;
+    }
 }
