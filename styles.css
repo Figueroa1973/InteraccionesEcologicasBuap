@@ -228,14 +228,23 @@ a:hover {
 }
 
 .parrafos {
-    font-family: 'times new roman', sans-serif;
-    color: rgb(0, 0, 0); /* Color del texto */
-    font-size: 20px;
-    text-align: justify;
-    padding-left: 100px;
-    padding-right: 120px;
-
+  font-family: 'Times New Roman', serif;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: justify;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+  .parrafos {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 18px; /* Opcional: texto un poco más chico en móvil */
+  }
+}
+
 
 .ImgLogoCA {
     width: 190px;
@@ -452,3 +461,46 @@ a:hover {
   font-size: 0.95rem;
   line-height: 1.4;
 }
+
+
+.contenedor-collage {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .contenedor-collage img {
+      max-width: 100%;
+      height: auto;
+      width: 800px; /* Tamaño grande en pantallas grandes */
+    }
+
+    @media (max-width: 768px) {
+      .contenedor-collage img {
+        width: 100%; /* En pantallas pequeñas ocupa todo el ancho disponible */
+      }
+    }
+
+
+
+
+      .contenedor-programaspdf {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .contenedor-programaspdf iframe {
+      width: 60vw;   /* 90% del ancho visible */
+      height: 140vh;  /* 80% del alto visible */
+      border: none;
+    }
+
+    @media (max-width: 600px) {
+      .contenedor-programaspdf iframe {
+        width: 100vw;
+        height: 70vh; /* Usa casi toda la pantalla en móviles */
+      }
+    }

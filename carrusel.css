@@ -1,7 +1,7 @@
 /* Estilos básicos del carrusel */
 .carousel {
     position: relative;
-    width: 100%;
+    width: 80%;
     max-width: 800px; /* Limita el tamaño en pantallas grandes */
     margin: auto;
     overflow: hidden;
