@@ -29,6 +29,20 @@
     margin: 20px auto 20px auto; /* Margen automático para centrar horizontalmente */
 }
 
+
+.particibox2 {
+    display: flex;
+    align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+    background-color: white; /* Fondo blanco para el contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor del contenedor */
+    padding: 20px; /* Espacio dentro del contenedor */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    border: 2px solid black; /* Borde sólido */
+    margin: 20px auto 20px auto; /* Margen automático para centrar horizontalmente */
+}
+
 /* Estilo de la imagen del perfil */
 .profile-img {
     text-align: center; /* Centra la imagen horizontalmente dentro de su contenedor */
