@@ -1,246 +1,373 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Página Web</title>
     <!-- CSS de Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!-- Mi CSS Personalizado -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="carrusel.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="carrusel.css" />
+  </head>
+  <body>
+    <!-- Menu -->
 
-<!-- Menu --> 
-
-<div class="contenedorNAV"> 
-  <nav class="navbar navbar-expand-lg bg-transparent">
-    <div class="container-fluid">
-      <img src="./Recursos/LogoBorde.png" alt="logo"  style="height: 130px;">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-              Integrantes
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./IntegrantesDulce.html">Dra. Dulce Figueroa</a></li>
-              <li><a class="dropdown-item" href="./Integrantes_Postdoctorantes.html">PostDoctorantes</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="./Integrantes_Tesistas.html">Tesistas</a></li>
+    <div class="contenedorNAV">
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <img
+            src="./Recursos/LogoBorde.png"
+            alt="logo"
+            style="height: 130px"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="true"
+                >
+                  Integrantes
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./IntegrantesDulce.html"
+                      >Dra. Dulce Figueroa</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./Integrantes_Postdoctorantes.html"
+                      >PostDoctorantes</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="./Integrantes_Tesistas.html"
+                      >Tesistas</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Publicaciones.html"
+                  >Publicaciones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Actividades.html"
+                  >Actividades de Divulgación</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./CuerpoAcademico.html"
+                  >Cuerpo Acádemico</a
+                >
+              </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Publicaciones.html">Publicaciones</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Actividades.html">Actividades de Divulgación</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./CuerpoAcademico.html">Cuerpo Acádemico</a>
-          </li>
-         
-
-          
-          
-        </ul>
-    
-      </div>
-    </div>
-  </nav>
-</div>
-
-
-  <br> <br> <br>
-
-  <h1 class="tit1"> Dra. Dulce María Figueroa Castro </h1> 
-  <img src="./Recursos/SepaUva.png" class="img-fluid" width= "100%" alt="...">
-  <br>
-  <br>
-
- <div class="parrafos">
-  Estudió la Licenciatura en Biología y la Maestría en Ciencias Biológicas (Biología Ambiental) en la Facultad de Ciencias de la UNAM. Posteriormente, obtuvo el Doctorado en Ciencias Biológicas en la Universidad de Missouri-Columbia. Ha sido docente por más de 20 años en diversas instituciones, tanto nacionales (UNAM, UAM-I, BUAP, UNSIJ) como internacionales (Universidad de Missouri-Columbia), impartiendo cursos de Ecología, Biología de Plantas y Biología de la Polinización, tanto a nivel licenciatura como posgrado. Además de las actividades de docencia, ha dirigido y/o codirigido tesis tanto de licenciatura como de posgrado; ha publicado artículos científicos en revistas nacionales e internacionales, capítulos de libro y artículos de divulgación. Los resultados de los proyectos de investigación en que ha participado han sido presentados en diversos foros, tanto internacionales como nacionales. Así mismo, ha realizado actividades de divulgación como la impartición de talleres, y la organización del Foro sobre Apreciación de los Polinizadores. Es miembro del Sistema Nacional de Investigadores desde 2012, del padrón de investigadores de la BUAP desde 2011 y cuenta con el reconocimiento al perfil deseable PRODEP desde 2011.
-</div>
-<br> <br> 
-
-<div class="carousel">
-  <div class="carousel-images">
-      <!-- Imágenes del carrusel -->
-      <img src="./Recursos/GaleriaDulce/Uno.jpg" alt="Foto 1">
-      <img src="./Recursos/GaleriaDulce/Dos.png" alt="Foto 2">
-      <img src="./Recursos/GaleriaDulce/Tres.JPG" alt="Foto 3">
-      <img src="./Recursos/GaleriaDulce/Cuatro.png" alt="Foto 4">
-      <img src="./Recursos/GaleriaDulce/Cinco.jpg" alt="Foto 5">
-      <img src="./Recursos/GaleriaDulce/Seis.jpg" alt="Foto 6">
-      <img src="./Recursos/GaleriaDulce/Siete.JPG" alt="Foto 7">
-      <img src="./Recursos/GaleriaDulce/Ocho.JPG" alt="Foto 8">
-      <img src="./Recursos/GaleriaDulce/Nueve.JPG" alt="Foto 9">
-      <img src="./Recursos/GaleriaDulce/Diez.png" alt="Foto 10">
-      
-     
-  </div>
-  <!-- Botones para navegar -->
-  <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
-  <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
-</div>
-
-<br> 
-<br> <br> 
-
-<br> 
-
-<div class="contenedor">
-    <div class="columna medio" > </div>
-    <div class="columna" >   
-      <hr>
-    <h4 class="tit4"> Realizando experimentos de polinización manual en <i> Myrtillocactus geometrizans. </i> </h4>
-    <hr>
-    </div>
-    <div class="columna medio"> </div>   
-</div>
-
-
-<div class="contenedor">
-    <div class="columna lateralesgrandes" >  </div>
-    <div class="columna dobletiradefotos">
-        <img class="tiradeimagenes" src="./Recursos/Collages/Collage1/Uno.jpg" alt="Imagen 1">
-        <img class="tiradeimagenes" src="./Recursos/Collages/Collage1/Dos.jpg" alt="Imagen 2">
-      </div>
-    <div class="columna dobletiradefotos">
-        <img class="tiradeimagenes" src="./Recursos/Collages/Collage1/Tres.jpg" alt="Imagen 3">
-        <img class="tiradeimagenes" src="./Recursos/Collages/Collage1/Cuatro.jpg" alt="Imagen 4">
-    </div>
-    <div class="columna tiradefotos">
-        <img class="tiradeimagenes" src="./Recursos/Collages/Collage1/Cinco.jpg" alt="Imagen 5">
-    </div>
-    <div class="columna lateralesgrandes" > </div>
-</div>
-
-
-<div class="contenedor">
-    <div class="columna medio" > </div>
-    <div class="columna" >   
-      <hr>
-    <h4 class="tit4"> Salida de campo con fines docentes con alumnos del curso de Biología de Plantas I </h4>
-    <hr>
-    </div>
-    <div class="columna medio"> </div>   
-</div>
-
-
-<div class="contenedor">
-    <div class="columna lateralesgrandes" >  </div>
-    <div class="columna dobletiradefotos">
-        <img class="tiradeimagenes" src="./Recursos/Collages/Collage6/1.jpg" alt="Imagen 1">
-        <img class="tiradeimagenes" src="./Recursos/Collages/Collage6/2.jpg" alt="Imagen 2">
-      </div>
-    <div class="columna dobletiradefotos">
-        <img class="tiradeimagenes" src="./Recursos/Collages/Collage6/3.jpg" alt="Imagen 3">
-        <img class="tiradeimagenes" src="./Recursos/Collages/Collage6/4.jpg" alt="Imagen 4">
-    </div>
-  
-    <div class="columna lateralesgrandes" > </div>
-</div>
-
-
-<div class="contenedor">
-    <div class="columna medio" > </div>
-    <div class="columna" >   
-      <hr>
-    <h4 class="tit4"> Salidas a campo a la región de los Tuxtlas, Veracruz, con estudiantes de del curso de Biología Vegetal II, así como con tesistas de licenciatura.   </h4>
-    <hr>
-    </div>
-    <div class="columna medio"> </div>   
-</div>
-
-<div class="contenedor">
-  <div class="columna lateralesgrandes" >  </div>
-  <div class="columna dobletiradefotos">
-      <img class="tiradeimagenes" src="./Recursos/Collages/Collage10/1.jpg" alt="Imagen 1">
-      <img class="tiradeimagenes" src="./Recursos/Collages/Collage10/2.jpg" alt="Imagen 2">
- 
-    </div>
- 
-  <div class="columna dobletiradefotos">
-      <img class="tiradeimagenes" src="./Recursos/Collages/Collage10/3.JPG" alt="Imagen 3">
-
-  </div>
-  <div class="columna lateralesgrandes" > </div>
-</div>
-
-
-
-
-  <!-- Bootstrap JS + Popper -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-  <script src="./carrusel.js"></script> 
-<footer class="footer pie text-light text-center ">
-    <div class="container">
-      <div class="row">
-
-
-        <div class="col-lg-4 col-sm-12 mt-5">
-          <figure>
-            <a href="https://www.buap.mx/"  target="_blank">
-
-              <img src="./Recursos/logobuap.png" alt="logo"  style="height: 120px;">
-            </a>
-
-            <figcaption>
-              <p>Benemerita Universidad Autónoma de Puebla</p>
-            </figcaption>
-          </figure>
+          </div>
         </div>
-
-
-        <div class="col-lg-4 col-sm-12 mt-5">
-          <figure>
-            <a href="./index.html">
-
-              <img src="./Recursos/LogoBorde.png" alt="logo"  style="height: 120px;">
-            </a>
-
-            <figcaption>
-              <p> Laboratorio de Interacciones Ecológicas</p>
-            </figcaption>
-          </figure>
-
-        </div>
-
-        <div class="col-lg-4 col-sm-12 mt-5">
-          <figure>
-            <a href="https://csbiologicas.buap.mx/"  target="_blank">
-
-              <img src="./Recursos/logofcbb.png" alt="logo"  style="height: 120px;">
-            </a>
-
-            <figcaption>
-              <p> Facultad de Ciencias Biológicas</p>
-            </figcaption>
-          </figure>
-
-        </div>
-
-        <div class="col-lg-12 col-sm-12 mt-5">  
-             <p> Dra. Dulce María Figueroa Castro </p>
-              <p> Correo: dulce.figueroa@correo.buap.mx </p>
-        </div>
-
-
-      </div>
+      </nav>
     </div>
-  </footer>
- <!-- JavaScript de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <br />
+    <br />
+    <br />
+
+    <h1 class="tit1">Dra. Dulce María Figueroa Castro</h1>
+    <img
+      src="./Recursos/SepaUva.png"
+      class="img-fluid"
+      width="100%"
+      alt="..."
+    />
+    <br />
+    <br />
+
+    <div class="parrafos">
+      Estudió la Licenciatura en Biología y la Maestría en Ciencias Biológicas
+      (Biología Ambiental) en la Facultad de Ciencias de la UNAM.
+      Posteriormente, obtuvo el Doctorado en Ciencias Biológicas en la
+      Universidad de Missouri-Columbia. Ha sido docente por más de 20 años en
+      diversas instituciones, tanto nacionales (UNAM, UAM-I, BUAP, UNSIJ) como
+      internacionales (Universidad de Missouri-Columbia), impartiendo cursos de
+      Ecología, Biología de Plantas y Biología de la Polinización, tanto a nivel
+      licenciatura como posgrado. Además de las actividades de docencia, ha
+      dirigido y/o codirigido tesis tanto de licenciatura como de posgrado; ha
+      publicado artículos científicos en revistas nacionales e internacionales,
+      capítulos de libro y artículos de divulgación. Los resultados de los
+      proyectos de investigación en que ha participado han sido presentados en
+      diversos foros, tanto internacionales como nacionales. Así mismo, ha
+      realizado actividades de divulgación como la impartición de talleres, y la
+      organización del Foro sobre Apreciación de los Polinizadores. Es miembro
+      del Sistema Nacional de Investigadores desde 2012, del padrón de
+      investigadores de la BUAP desde 2011 y cuenta con el reconocimiento al
+      perfil deseable PRODEP desde 2011.
+    </div>
+    <br />
+    <br />
+
+    <div class="carousel">
+      <div class="carousel-images">
+        <!-- Imágenes del carrusel -->
+        <img src="./Recursos/GaleriaDulce/Uno.jpg" alt="Foto 1" />
+        <img src="./Recursos/GaleriaDulce/Dos.png" alt="Foto 2" />
+        <img src="./Recursos/GaleriaDulce/Tres.JPG" alt="Foto 3" />
+        <img src="./Recursos/GaleriaDulce/Cuatro.png" alt="Foto 4" />
+        <img src="./Recursos/GaleriaDulce/Cinco.jpg" alt="Foto 5" />
+        <img src="./Recursos/GaleriaDulce/Seis.jpg" alt="Foto 6" />
+        <img src="./Recursos/GaleriaDulce/Siete.JPG" alt="Foto 7" />
+        <img src="./Recursos/GaleriaDulce/Ocho.JPG" alt="Foto 8" />
+        <img src="./Recursos/GaleriaDulce/Nueve.JPG" alt="Foto 9" />
+        <img src="./Recursos/GaleriaDulce/Diez.png" alt="Foto 10" />
+      </div>
+      <!-- Botones para navegar -->
+      <button class="carousel-button prev" onclick="moveSlide(-1)">
+        &#10094;
+      </button>
+      <button class="carousel-button next" onclick="moveSlide(1)">
+        &#10095;
+      </button>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <br />
+
+    <div class="contenedor">
+      <div class="columna medio"></div>
+      <div class="columna">
+        <hr />
+        <h4 class="tit4">
+          Realizando experimentos de polinización manual en
+          <i> Myrtillocactus geometrizans. </i>
+        </h4>
+        <hr />
+      </div>
+      <div class="columna medio"></div>
+    </div>
+
+    <div class="contenedor">
+      <div class="columna lateralesgrandes"></div>
+      <div class="columna dobletiradefotos">
+        <img
+          class="tiradeimagenes"
+          src="./Recursos/Collages/Collage1/Uno.jpg"
+          alt="Imagen 1"
+        />
+        <img
+          class="tiradeimagenes"
+          src="./Recursos/Collages/Collage1/Dos.jpg"
+          alt="Imagen 2"
+        />
+      </div>
+      <div class="columna dobletiradefotos">
+        <img
+          class="tiradeimagenes"
+          src="./Recursos/Collages/Collage1/Tres.jpg"
+          alt="Imagen 3"
+        />
+        <img
+          class="tiradeimagenes"
+          src="./Recursos/Collages/Collage1/Cuatro.jpg"
+          alt="Imagen 4"
+        />
+      </div>
+      <div class="columna tiradefotos">
+        <img
+          class="tiradeimagenes"
+          src="./Recursos/Collages/Collage1/Cinco.jpg"
+          alt="Imagen 5"
+        />
+      </div>
+      <div class="columna lateralesgrandes"></div>
+    </div>
+
+    <div class="contenedor">
+      <div class="columna medio"></div>
+      <div class="columna">
+        <hr />
+        <h4 class="tit4">
+          Salida de campo con fines docentes con alumnos del curso de Biología
+          de Plantas I
+        </h4>
+        <hr />
+      </div>
+      <div class="columna medio"></div>
+    </div>
+
+    <div class="contenedor">
+      <div class="columna lateralesgrandes"></div>
+      <div class="columna dobletiradefotos">
+        <img
+          class="tiradeimagenes"
+          src="./Recursos/Collages/Collage6/1.jpg"
+          alt="Imagen 1"
+        />
+        <img
+          class="tiradeimagenes"
+          src="./Recursos/Collages/Collage6/2.jpg"
+          alt="Imagen 2"
+        />
+      </div>
+      <div class="columna dobletiradefotos">
+        <img
+          class="tiradeimagenes"
+          src="./Recursos/Collages/Collage6/3.jpg"
+          alt="Imagen 3"
+        />
+        <img
+          class="tiradeimagenes"
+          src="./Recursos/Collages/Collage6/4.jpg"
+          alt="Imagen 4"
+        />
+      </div>
+
+      <div class="columna lateralesgrandes"></div>
+    </div>
+
+    <div class="contenedor">
+      <div class="columna medio"></div>
+      <div class="columna">
+        <hr />
+        <h4 class="tit4">
+          Salidas a campo a la región de los Tuxtlas, Veracruz, con estudiantes
+          de del curso de Biología Vegetal II, así como con tesistas de
+          licenciatura.
+        </h4>
+        <hr />
+      </div>
+      <div class="columna medio"></div>
+    </div>
+
+    <div class="contenedor">
+      <div class="columna lateralesgrandes"></div>
+      <div class="columna dobletiradefotos">
+        <img
+          class="tiradeimagenes"
+          src="./Recursos/Collages/Collage10/1.jpg"
+          alt="Imagen 1"
+        />
+        <img
+          class="tiradeimagenes"
+          src="./Recursos/Collages/Collage10/2.jpg"
+          alt="Imagen 2"
+        />
+      </div>
+
+      <div class="columna dobletiradefotos">
+        <img
+          class="tiradeimagenes"
+          src="./Recursos/Collages/Collage10/3.JPG"
+          alt="Imagen 3"
+        />
+      </div>
+      <div class="columna lateralesgrandes"></div>
+    </div>
+
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="./carrusel.js"></script>
+    <footer class="footer pie text-light text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 mt-5">
+            <figure>
+              <a href="./index.html">
+                <img
+                  src="./Recursos/LogoBorde.png"
+                  alt="logo"
+                  style="height: 120px"
+                />
+              </a>
+
+              <figcaption>
+                <p>Laboratorio de Interacciones Ecológicas</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-lg-4 col-sm-12 mt-5">
+            <figure>
+              <a href="https://csbiologicas.buap.mx/" target="_blank">
+                <img
+                  src="./Recursos/logofcbb.png"
+                  alt="logo"
+                  style="height: 120px"
+                />
+              </a>
+
+              <figcaption>
+                <p>Facultad de Ciencias Biológicas</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-lg-4 col-sm-12 mt-5">
+            <figure>
+              <a href="https://www.buap.mx/" target="_blank">
+                <img
+                  src="./Recursos/logobuap.png"
+                  alt="logo"
+                  style="height: 120px"
+                />
+              </a>
+
+              <figcaption>
+                <p>Benemerita Universidad Autónoma de Puebla</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-lg-12 col-sm-12 mt-5">
+            <span>Dra. Dulce María Figueroa Castro</span><br />
+            <span>Correo: dulce.figueroa@correo.buap.mx</span>
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- JavaScript de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript de Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
