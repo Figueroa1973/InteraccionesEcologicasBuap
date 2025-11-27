@@ -16,9 +16,48 @@
   margin-right: 45px; /* Espacio entre cada sección */
 }
 
+.semblanza {
+  font-family: "relationship", sans-serif;
+  color: rgb(0, 0, 0); /* Color del texto */
+  text-align: center;
+  font-size: 35px;
+  padding: 2px; /* Añade espacio interno alrededor del contenido */
+}
+
 @font-face {
   font-family: "robotomono";
   src: url("./Fuentes/RobotoMono.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "relationship";
+  src: url("./Fuentes/Relationship.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "hibiscus";
+  src: url("./Fuentes/Hibiscus.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "stagera";
+  src: url("./Fuentes/Stagera.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ananda";
+  src: url("./Fuentes/Ananda.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
