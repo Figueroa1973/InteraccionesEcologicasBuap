@@ -21,7 +21,14 @@
   color: rgb(0, 0, 0); /* Color del texto */
   text-align: center;
   font-size: 35px;
-  padding: 2px; /* Añade espacio interno alrededor del contenido */
+}
+
+
+.flores {
+  font-family: "hibiscus", sans-serif;
+  color: rgb(0, 0, 0); /* Color del texto */
+  text-align: center;
+  font-size: 35px;
 }
 
 @font-face {
